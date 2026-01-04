@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package UserService.api;
 
-option go_package = "github.com/VladislavVoronov/UserService/pkg/api/user;user";
+option go_package = "pkg/api/user;user";
 
 // SearchByNicknameRequest - запрос на получение списка юзеров по никнейму
 message SearchByNicknameRequest {
