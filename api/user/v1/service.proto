@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package UserService.api;
+package UserService.api.user.v1;
 
-import "user_service/messages.proto";
+import "user/messages.proto";
 
-option go_package = "pkg/api/user;user";
+option go_package = "proto/pkg/api/user;user";
 
 // UserService - сервис управлением юзеров
 service UserService {
@@ -26,5 +26,4 @@ service UserService {
   // Принимает GetProfileByNicknameRequest и возвращает GetProfileByNicknameResponse
   rpc GetProfileByNickname(GetProfileByNicknameRequest)
       returns (GetProfileByNicknameResponse) {}
-
 }
